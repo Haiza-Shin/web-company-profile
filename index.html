@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <title> NexGen Ventures</title>
+    <script>
+        window.addEventListener("load", () => 
+        {
+            const loader = document.querySelector(".loader")
+            loader.classList.add("loader--hidden");
+            loader.addEventListener("transitionend", () =>{
+                document.body.removeChild(loader);
+            })
+            
+        });
+
+        
+    </script>
+</head>
+<body>
+
+    <div class="loader"> </div>
+
+    <header> 
+    <div class="navbar">
+        <div class="logo"> <a href="#"> NexGen </a></div>
+        <ul class="links">
+            <li><a href="#home"> Nexgen </a></li>
+            <li><a href="#about"> About </a></li>
+            <li><a href="#extra"> Phone </a></li>
+            <li><a href="#achievements"> Laptop </a></li>
+            <li><a href="#contact"> Contact </a></li>
+        </ul>
+        
+        <div class="toggle_btn">
+            <i class='bx bx-menu-alt-right'></i>
+        </div>
+    </div>
+
+    <div class="dropdown_menu">
+        <li><a href="#home"> NexGen </a></li>
+            <li><a href="#about"> About </a></li>
+            <li><a href="#extra"> Phone </a></li>
+            <li><a href="#achievements"> Laptop </a></li>
+            <li><a href="#contact"> Contact </a></li>
+            
+    </div>
+</header>
+ <script>
+    const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon =document.querySelector('.toggle_btn i')
+        const dropDownMenu =document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick = function (){
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classLis.contains('open')
+
+            toggleBtnIcon.classList= isOpen
+            ? 'bx bx-x'
+            : 'bx bx-menu-alt-right'
+        }
+ </script>
+<section class="home" id="home">
+    <div class="home-content">
+        <h1> Welcome To NexGen Ventures </h1>
+        <p> Anda menginginkan   <span class="multiple-text"> </span> </p>
+    </div>
+</section>
+
+<section class="about" id="about">
+    <h1 class="heading"> Kelebihan <span>NexGen</span></h1>
+
+    <div class="about-container">
+        <div class="s-box">
+             <h2> Murah </h2>
+            <h3> Kita membuat harga Handphone dan Laptop NexGen Ventures seramah mungkin untuk kantong agar semua orang bisa merasakan laptop kualitas tinggi dengan harga yang murah. </h3>
+        </div>
+
+        <div class="s-box">
+             <h2> Berkualitas tinggi </h2>
+            <h3> Kita membuat semua produk NexGen berkualitas tinggi agar dapat membantu kalian ketika memerlukan Handphone atau laptop dengan spek yang memumpuni untuk kerja dan bermain game dan belajar. </h3>
+        </div>
+
+        <div class="s-box">
+             <h2> Desain bagus </h2>
+            <h3> Kita membuat desain hardware NexGen sangat stylish dan simple agar ketika kalian membawa barang produk kami terlihat keren dan simple. </h3>
+        </div>
+        <div class="s-box">
+            <h2> Tahan lama </h2>
+            <h3> Kta sudah membuat hardware NexGen tahan lama kemungkinan sekitar 10 tahun agar kalian tidak perlu gonta ganti hardware kalian dengan cepat.</h3>
+        </div>
+
+        <div class="s-box">
+            <h2> Multi fungsi</h2>
+            <h3> Hardware kita, kita buat multi fungsi agar kalian bisa melakukan banyak hal dengan hardware kalian, tidak terfokus hanya 1 fungsi, seperti hanya khusus untuk bermain game atau hanya khusus untuk kerja/belajar. </h3>
+        </div>
+    </div>
+</section>
+   
+<section class="extra" id="extra">
+    <h1 class="heading"> NexGen <span>Phone</span> </h1>
+
+    <div class="extra-container">
+        <div class="extra-box">
+            <img src="img/realme.jpg">
+            <div class="extra-layer">
+                <h4> N1 </h4>
+            </div>
+        </div>
+
+        <div class="extra-box">
+            <img src="img/samsung.jpg">
+            <div class="extra-layer">
+                <h4> N2 </h4>
+            </div>
+        </div>
+
+        <div class="extra-box">
+            <img src="img/ip 16.jpg">
+            <div class="extra-layer">
+                <h4> N3 </h4>
+            </div>
+        </div>
+
+        <div class="extra-box">
+            <img src="img/poco f4 gt.jpg">
+            <div class="extra-layer">
+                <h4> G1</h4>
+            </div>
+        </div>
+
+        <div class="extra-box">
+            <img src="img/black shark.jpg">
+            <div class="extra-layer">
+                <h4> G2 </h4>
+            </div>
+        </div>
+
+        <div class="extra-box">
+            <img src="img/Rog.jpg">
+            <div class="extra-layer">
+                <h4> G3</h4>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="achievements" id="achievements">
+    <h1 class="heading"> NexGen <span> Laptop </span></h1>
+
+    <div class="ach-container">
+        <div class="ach-box">
+            <img src="img/pongo.jpg">
+            <div class="ach-layer">
+                <h4> P1 </h4>
+            </div>
+        </div>
+
+        <div class="ach-box">
+            <img src="img/victus.png">
+            <div class="ach-layer">
+                <h4> P2 </h4>
+            </div>
+        </div>
+
+        <div class="ach-box">
+            <img src="img/lap rog.jpg">
+            <div class="ach-layer">
+                <h4> P3 </h4>
+            </div>
+        </div>
+
+        <div class="ach-box">
+            <img src="img/lenovo.jpg">
+            <div class="ach-layer">
+                <h4> S1 </h4>
+            </div>
+        </div>
+
+        <div class="ach-box">
+            <img src="img/macbook.jpeg">
+            <div class="ach-layer">
+                <h4> S2 </h4>
+            </div>
+        </div>
+
+        <div class="ach-box">
+            <img src="img/specter fold.png">
+            <div class="ach-layer">
+                <h4> S3 </h4>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="contact" id="contact">
+    <h2 class="heading"> Contact Us </h2>
+    <div class="content">
+        <div class="card">
+            <div class="icon1">
+                <i class='bx bxl-whatsapp' ></i>
+            </div>
+            <div class="info">
+                <h3> Whatsapp </h3>
+                <p> <a href="https://wa.me/085774731808?text=Hello There!">Send Message</a></p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="icon2">
+                <i class='bx bxl-instagram-alt' ></i>
+            </div>
+            <div class="info">
+                <h3> Instagram </h3>
+                <p> <a href="https://www.instagram.com/haizashin/"> @HaizaShin </a></p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="icon3">
+                <i class='bx bxl-facebook-circle' ></i>
+            </div>
+            <div class="info">
+                <h3> Facebook </h3>
+                <p> <a href="https://www.facebook.com/profile.php?id=61552615860995"> @Haiza Sintou </a></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <h2 class="footer-title"> Copyright &copy; NexGen Ventures 2k24</h2>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script>
+    // typed js
+const typed = new Typed('.multiple-text',{
+    strings:[' tech terbagus',' tech berkualitas tinggi',' tech murah',''],
+    typeSpeed:35,
+    backSpeed:35,
+    backDelay:100,
+    loop:true,
+
+})
+</script>
+
+<script src="js/script.js"> </script>
+</body>
+</html>
